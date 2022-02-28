@@ -8,6 +8,7 @@ import cpw.mods.fml.common.event.FMLServerStartedEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.event.FMLServerStoppedEvent;
 import cpw.mods.fml.common.event.FMLServerStoppingEvent;
+import io.github.dipo33.gtnhaddon.common.ModItems;
 
 public class CommonProxy {
 
@@ -15,6 +16,7 @@ public class CommonProxy {
     // etc, and register them with the GameRegistry."
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
+        ModItems.register();
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."

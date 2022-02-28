@@ -4,7 +4,7 @@ package io.github.dipo33.gtnhaddon;
 public class Reference {
 
     public static final String MODID = "DiposAddonGTNH";
-    public static final String MOD_NAME = "Dipo's GregTech New Horizons Addon";
+    public static final String MOD_NAME = "Dipo's Addon for GregTech: New Horizons";
     public static final String VERSION = "GRADLETOKEN_VERSION";
     public static final String GROUP_NAME = "io.github.dipo33.gtnhaddon";
 }

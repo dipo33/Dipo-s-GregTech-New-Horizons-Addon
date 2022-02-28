@@ -1,16 +1,20 @@
 package io.github.dipo33.gtnhaddon;
 
-import cpw.mods.fml.common.event.*;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerAboutToStartEvent;
+import cpw.mods.fml.common.event.FMLServerStartedEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.event.FMLServerStoppedEvent;
+import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 
 public class CommonProxy {
 
     // preInit "Run before anything else. Read your config, create blocks, items,
     // etc, and register them with the GameRegistry."
-    public void preInit(FMLPreInitializationEvent event) 	{
-        Config.syncronizeConfiguration(event.getSuggestedConfigurationFile());
-
-        GTNHAddonMod.info(Config.greeting);
-        GTNHAddonMod.info("I am " + Reference.MOD_NAME + " at version " + Reference.VERSION + " and group name " + Reference.GROUP_NAME);
+    public void preInit(FMLPreInitializationEvent event) {
+        Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."

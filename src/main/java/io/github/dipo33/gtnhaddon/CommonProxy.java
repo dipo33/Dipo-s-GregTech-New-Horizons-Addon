@@ -9,6 +9,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.event.FMLServerStoppedEvent;
 import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 import io.github.dipo33.gtnhaddon.common.ModItems;
+import io.github.dipo33.gtnhaddon.recipes.Recipes;
 
 public class CommonProxy {
 
@@ -21,7 +22,7 @@ public class CommonProxy {
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."
     public void init(FMLInitializationEvent event) {
-
+        Recipes.register();
     }
 
     // postInit "Handle interaction with other mods, complete your setup based on this."

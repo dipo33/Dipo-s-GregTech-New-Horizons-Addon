@@ -1,4 +1,4 @@
-package io.github.dipo33.gtnhaddon.recipes;
+package io.github.dipo33.gtnhaddon.common.recipes;
 
 public class Recipes {
 

@@ -1,4 +1,4 @@
-package io.github.dipo33.gtnhaddon.recipes;
+package io.github.dipo33.gtnhaddon.common.recipes;
 
 import gregtech.api.enums.GT_Values;
 import ic2.core.Ic2Items;

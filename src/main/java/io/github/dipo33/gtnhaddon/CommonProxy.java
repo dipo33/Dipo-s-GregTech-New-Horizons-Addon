@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.event.FMLServerStoppedEvent;
 import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 import io.github.dipo33.gtnhaddon.common.ModItems;
-import io.github.dipo33.gtnhaddon.recipes.Recipes;
+import io.github.dipo33.gtnhaddon.common.recipes.Recipes;
 
 public class CommonProxy {
 

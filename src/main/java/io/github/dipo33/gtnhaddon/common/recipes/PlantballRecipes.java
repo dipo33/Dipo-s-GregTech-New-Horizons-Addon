@@ -43,12 +43,17 @@ public class PlantballRecipes {
         addWoodPulpRecipe(plants, 5); // Thorns
         addCompressPlantballRecipe(plants, 8); // River Cane
         addMixedPlantballRecipe(plants, 15); // Root
+
+        // ThaumCraft
+        Block tcLeaves = GameRegistry.findBlock("Thaumcraft", "blockMagicalLeaves");
+        addPlantballRecipe(tcLeaves, 0); // Great Wood Leaves
+        addPlantballRecipe(tcLeaves, 1); // Silver Wood Leaves
     }
 
     /**
-     * @param plant Plant item to add recipes for
+     * @param plant       Plant item to add recipes for
      * @param damageStart Start damage index (inclusive)
-     * @param damageEnd End damage index (exclusive)
+     * @param damageEnd   End damage index (exclusive)
      */
     private static void addPlantballRecipesForDamage(Item plant, int damageStart, int damageEnd) {
         for (int damage = damageStart; damage < damageEnd; ++damage) {

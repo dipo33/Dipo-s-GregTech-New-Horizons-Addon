@@ -14,7 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.MOD_NAME, acceptedMinecraftVersions = "[1.7.10]",
-        dependencies = "required-after:BiomesOPlenty;required-after:IC2;required-after:gregtech")
+        dependencies = "required-after:BiomesOPlenty;required-after:IC2;required-after:gregtech;required-after:Thaumcraft")
 public class GTNHAddonMod {
 
     private static final Logger LOG = LogManager.getLogger(Reference.MODID);
